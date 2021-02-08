@@ -109,12 +109,14 @@ const styleSrcUrls = [
 	'https://api.tiles.mapbox.com/',
 	'https://fonts.googleapis.com/',
 	'https://use.fontawesome.com/',
-	'https://cdn.jsdelivr.net'
+	'https://cdn.jsdelivr.net',
+	'https://stackpath.bootstrapcdn.com'
 ];
 const connectSrcUrls = [
 	'https://api.mapbox.com/',
 	'https://a.tiles.mapbox.com/',
 	'https://b.tiles.mapbox.com/',
+	'https://*.tiles.mapbox.com',
 	'https://events.mapbox.com/'
 ];
 const fontSrcUrls = [];
