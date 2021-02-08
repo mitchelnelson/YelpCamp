@@ -19,7 +19,7 @@ db.once('open', () => {
 const sample = arr => arr[Math.floor(Math.random() * arr.length)];
 
 const seedDB = async () => {
-	// await Campground.deleteMany({});
+	await Campground.deleteOne({ title: 'Kimball Lake Campground' });
 	for (let i = 0; i < 200; i++) {
 		const random1104 = Math.floor(Math.random() * 1104);
 		const price = Math.floor(Math.random() * 15) + 10;
