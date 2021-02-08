@@ -3,7 +3,8 @@
 
   <section class="card-container">
     <div class="row">
-      <div class="col-6">
+      <div class="col-md-6">
+        <!-- col-md-6 offset-md-3 col-xl-4 offset-xl-4 -->
         <div class="card mb-3">
           <div id="campgroundCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -47,8 +48,8 @@
         </div>
       </div>
 
-      <div class="col-6">
-        <div id='map'></div>
+      <div class="col-md-6">
+        <div class="mb-3" id='map'></div>
         <% if (authUser) {%> 
         <h2>Leave a review:</h2>
         <form class="mb-3 validate-form" action="/campgrounds/<%= campground._id %>/reviews" method="POST" class="validate-form" novalidate>
