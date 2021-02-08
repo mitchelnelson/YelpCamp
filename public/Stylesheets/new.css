@@ -1,0 +1,10 @@
+.card {
+	min-width: 30vw;
+	display: flex;
+	justify-content: center;
+}
+
+.offset-md-3,
+.offset-xl-4 {
+	margin-left: 0;
+}
