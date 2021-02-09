@@ -12,6 +12,9 @@
   <% if (path === '/' || url === 'https://shielded-depths-28887.herokuapp.com') {%> 
   <link rel="stylesheet" href="/Stylesheets/home.css">
   <% } %> 
+  <% if (path === '/campgrounds' || url === 'https://shielded-depths-28887.herokuapp.com/campgrounds') {%> 
+  <link rel="stylesheet" href="/Stylesheets/app.css">
+  <% } %> 
 </head>
 <body class="d-flex flex-column vh-100">
   <%- include('../partials/navbar') %>

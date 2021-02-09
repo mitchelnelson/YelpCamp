@@ -3,11 +3,11 @@
   <!-- <div id="cluster-map"></div> -->
   <h1>All Campgrounds</h1>
   <% for (let camp of campground) {%> 
-    <div class="card mb-3">
+    <div class="card camp mb-3">
       <div class="row">
         <div class="col-md-4">
           <% if (camp.images.length){ %> 
-          <img class="img-fluid" src="<%=camp.images[0].url%>" alt="Campground">
+          <div class="img-container" style="background-image: url(<%=camp.images[0].url%>)"></div>
           <% } else { %> 
           <img src="https://lh3.googleusercontent.com/proxy/BlSOt63HAKCLm1kSPC56AVi5EAIBflzJ-KAhnHmC3jZ-zKCJ2NazBXXw2C7DhwTgRzPRZBPNOyT8le1CY-oN_Twt1Fd3DrA" alt="">
           <% } %> 
