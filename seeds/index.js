@@ -6,8 +6,8 @@ const mongoose = require('mongoose');
 const camps = require('./CanadaCamp');
 const Campground = require('../models/campground');
 
-const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/yelp-camp';
-// const dbUrl = 'mongodb://localhost:27017/yelp-camp';
+// const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/yelp-camp';
+const dbUrl = 'mongodb://localhost:27017/yelp-camp';
 
 mongoose.connect(dbUrl, {
 	useNewUrlParser: true,
@@ -29,8 +29,8 @@ const seedDB = async () => {
 		const random1104 = Math.floor(Math.random() * 1104);
 		const price = Math.floor(Math.random() * 15) + 10;
 		const camp = new Campground({
-			author: '6020a9ca48f1162952c83560',
-			// author: '6016cc2e7fbdb3431766054e', // local
+			// author: '6020a9ca48f1162952c83560',
+			author: '6016cc2e7fbdb3431766054e', // local
 			location: `${camps[random1104].location}, ${camps[random1104]
 				.province}`,
 			title: `${camps[random1104].campground}`,
