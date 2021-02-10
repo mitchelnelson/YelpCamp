@@ -149,6 +149,8 @@ passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
 app.use((req, res, next) => {
+	console.log(req.query);
+	console.log(req.path);
 	res.locals.path = req.path;
 	res.locals.url = req.url;
 	if (!['/login', '/'].includes(req.originalUrl)) {

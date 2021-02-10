@@ -16,7 +16,6 @@ body {
 	padding: 0.25rem;
 	font-weight: 700;
 	color: rgba(255, 255, 255, 0.5);
-	margin-left: 1rem;
 	border-bottom: 0.25rem solid transparent;
 }
 
@@ -44,14 +43,18 @@ body {
 		align-items: center;
 		justify-content: space-between;
 	}
-	.nav-masthead {
+	.nav-masthead.nav-masthead.nav-masthead {
+		width: 100vw;
 		display: flex;
-		flex-direction: column;
-		justify-content: center;
+		flex-direction: row;
+		justify-content: space-around;
 		align-items: center;
 		margin-top: 1rem;
 	}
 	.top-contents {
 		margin-bottom: -3rem;
+	}
+	.nav-link {
+		margin-left: 0;
 	}
 }
