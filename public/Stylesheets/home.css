@@ -15,6 +15,7 @@ body {
 .nav-link {
 	padding: 0.25rem;
 	font-weight: 700;
+	margin-left: 1rem;
 	color: rgba(255, 255, 255, 0.5);
 	border-bottom: 0.25rem solid transparent;
 }
@@ -29,13 +30,16 @@ body {
 	border-bottom-color: white;
 }
 
-.btn-secondary,
-.btn-secondary:hover {
+.btn-secondary {
 	color: #333;
 	text-shadow: none;
 }
 
-@media (max-width: 576px) {
+.btn-secondary:hover {
+	background-color: gold;
+}
+
+@media (max-width: 768px) {
 	.cover-container {
 		max-width: 100vw;
 		display: flex;
