@@ -149,8 +149,6 @@ passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
 app.use((req, res, next) => {
-	console.log(req.query);
-	console.log(req.path);
 	res.locals.path = req.path;
 	res.locals.url = req.url;
 	if (!['/login', '/'].includes(req.originalUrl)) {
@@ -160,15 +158,6 @@ app.use((req, res, next) => {
 	res.locals.success = req.flash('success');
 	res.locals.error = req.flash('error');
 	next();
-});
-
-app.get('/fakeUser', async (req, res) => {
-	const user = new User({
-		email: 'mitchelnelson@live.ca',
-		username: 'omgbeandip'
-	});
-	const newUser = await User.register(user, 'Oilerboy35%');
-	res.send(newUser);
 });
 
 // Linkage middleware to the routes folder. I have prefixed these so in the router files we do not need to have long prefixes.
