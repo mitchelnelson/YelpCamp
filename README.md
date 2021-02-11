@@ -41,16 +41,21 @@ https://shielded-depths-28887.herokuapp.com/campgrounds
   * [Heroku](https://dashboard.heroku.com/)
   
   ## Images
-  The landing page.
+  
+  ### The landing page.
+  
   ![HomePage](github/Home.png)
   
-  The index/main page with the cluster map.
+  ### The index/main page with the cluster map.
+  
   ![MapPage](github/Map.png)
   
-  Uploading/creating a new campground.
+  ### Uploading/creating a new campground.
+  
   ![NewPage](github/New.png)
   
-  A show page for a campground and reviews with a minimap off to the side.
+  ### A show page for a campground and reviews with a minimap off to the side.
+  
   ![ShowPage](github/Show.png)
   
   ## What I learned
